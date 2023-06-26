@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGrey"
+    android:backgroundTint="@color/lightGrey"
+    android:layout_height="match_parent"
+    tools:context=".account.MyAddressFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:backgroundTint="@color/blue_theme"
+        android:background="@color/blue_theme"
+        android:id="@+id/toolbar_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue_theme"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="My Address"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/my_address_recycler_view"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/card_view_review"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="3dp"
+    app:ignore="NamespaceTypo">
+
+    <!--   Recycler View Item Row   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/comment_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/orange"
+                android:backgroundTint="@color/orange"
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="15dp"
+                app:contentPadding="2dp">
+
+                <TextView
+                    android:id="@+id/name_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/orange"
+                    android:text="A"
+                    android:textSize="15dp"
+                    android:textColor="@color/white" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Name"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/date_of_person"
+            android:text="Date"
+            android:textSize="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Comment"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:id="@+id/comment_by_person"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        <RatingBar
+            android:id="@+id/rate_comment"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:rating="4"
+            android:theme="@style/RatingBar"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/blue"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

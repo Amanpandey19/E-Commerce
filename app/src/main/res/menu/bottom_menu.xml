@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/services"
+        android:icon="@drawable/ic_category_white"
+        app:showAsAction="ifRoom"
+        android:title="Services">
+    </item>
+    <item
+        android:id="@+id/holder"
+        app:showAsAction="ifRoom"
+        android:enabled="false"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="ifRoom"
+        android:title="Account">
+    </item>
+    <item
+        android:id="@+id/favourite"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="ifRoom"
+        android:title="Wishlist">
+    </item>
+</menu>

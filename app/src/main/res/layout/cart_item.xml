@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:backgroundTint="@color/white"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/cart_item_image"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:background="@drawable/product_gradient"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cartproduct" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/product_name_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:ellipsize="end"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:text="Men Slim Fit Solid Casual Shirt"
+                        android:textColor="@color/black" />
+
+                    <CheckBox
+                        android:id="@+id/fav_icon_cart"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/wishlist_background"
+                        android:backgroundTint="@color/white"
+                        android:button="@drawable/wishlist_item_selector"
+                        android:checked="true"
+                        android:focusedByDefault="true"
+                        app:useMaterialThemeColors="false" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/seller_name_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="11sp"
+                    android:text="By Louis Philippe Jeans "
+                    android:textColor="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/product_discount_price_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹5600"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/product_actual_price_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/strike_through"
+                        android:text="₹7600"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/product_discount_label_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/ic_baseline_label_24"
+                        android:backgroundTint="#FF9529"
+                        android:gravity="center"
+                        android:text="15% OFF"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        app:useMaterialThemeColors="false"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/product_rating_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.6"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:drawablePadding="1dp"
+                        app:drawableTint="#FF9529"
+                        app:drawableEndCompat="@drawable/ic_baseline_star_rate_24" />
+
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/number_of_ratings_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(1178 reviews)"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/grey"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:text="Qty : "
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/decrement"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textSize="12sp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="1"
+                        android:textColor="@color/black" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/increment"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="5dp">
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@color/black"
+                            android:backgroundTint="@color/black"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove"
+                        android:drawableEnd="@drawable/ic_delete"
+                        android:drawableTint="@color/black"
+                        android:drawablePadding="5dp"
+                        android:theme="@style/AppTheme.Button"
+                        android:textSize="11sp"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BUY"
+                       android:theme="@style/AppTheme.Button"
+                        android:textSize="11sp"
+                        android:drawableEnd="@drawable/ic_buy_14"
+                        android:drawableTint="@color/black"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:id="@+id/product_item_cart"
+    android:layout_margin="1dp"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/recent_image"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/product_3" />
+
+            <CheckBox
+                android:id="@+id/cbHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/wishlist_background"
+                android:button="@drawable/wishlist_item_selector"
+                app:useMaterialThemeColors="false"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/recent_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans"
+            android:maxLines="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:text="Product name"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/product_list_seller_name"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:text="By Roadster"
+            android:textColor="@color/grey"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@color/white"
+                android:id="@+id/recent_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹5600"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="2dp"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:background="@drawable/strike_through"
+                android:id="@+id/recent_striked_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹7,600"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/grey"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20% OFF"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/orange"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/recent_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.6"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="13sp"
+            app:drawableTint="#FF9529"
+            app:drawableEndCompat="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/number_of_ratings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(1178 reviews)"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/grey"
+            android:layout_marginBottom="10dp"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

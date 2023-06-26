@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:id="@+id/my_orders_card"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:backgroundTint="@color/white"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/my_orders_item_image"
+                    android:layout_width="150dp"
+                    android:layout_height="165dp"
+                    android:background="@drawable/product_gradient"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/cartproduct" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/product_name_my_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Men Slim Fit Solid Casual Shirt"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/seller_name_my_orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="40dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="11sp"
+                    android:text="By Louis Philippe Jeans "
+                    android:textColor="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/product_discount_price_my_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹5600"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="2dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:background="@drawable/strike_through"
+                        android:id="@+id/product_actual_price_my_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹7600"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/grey"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/product_discount_label_my_orders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/ic_baseline_label_24"
+                        android:backgroundTint="#FF9529"
+                        android:gravity="center"
+                        android:text="15% OFF"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        app:useMaterialThemeColors="false"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/delivery_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:text="Delivered on 26th June"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/grey"
+                    android:text="Rate this product now"
+                    />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_orders_ratingBar"
+                    style="?android:attr/ratingBarStyle"
+                    android:scaleX=".5"
+                    android:clickable="true"
+                    android:theme="@style/RatingBar"
+                    android:progressTint="@color/main_theme"
+                    android:layout_marginTop="5dp"
+                    android:rating="4"
+                    android:scaleY=".5"
+                    android:isIndicator="true"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:max="5"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

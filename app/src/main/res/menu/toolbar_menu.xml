@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Search"
+        android:icon="@drawable/ic_search_24"
+        android:iconTint="@color/black"
+        android:id="@+id/search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:title="Notifications"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:iconTint="@color/black"
+        android:id="@+id/notification"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>

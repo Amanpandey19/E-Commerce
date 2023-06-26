@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".account.EditProfileFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:backgroundTint="@color/blue_theme"
+        android:background="@color/blue_theme"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue_theme"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:text="Profile"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/notification_icon"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:src="@drawable/ic_baseline_notifications_none_24" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginEnd="2dp"
+                        android:backgroundTint="@color/red"
+                        app:layout_constraintTop_toTopOf="@+id/notification_icon"
+                        app:layout_constraintEnd_toEndOf="@id/notification_icon"
+                        android:layout_height="8dp">
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:background="@color/blue_theme"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/complete_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Aman Pandey"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="-60dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.alexzh.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/profile_user"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:focusable="true"
+            tools:targetApi="m" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_user_icon"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/grey"
+        android:fontFamily="@font/open_sans"
+        android:hint="Name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Aman"
+        android:textColor="@color/black">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Phone Number"
+        android:text="+91 9000000001"
+        android:layout_marginBottom="2dp"
+        android:paddingStart="12dp"
+        android:fontFamily="@font/open_sans"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/grey"
+        android:drawableStart="@drawable/ic_phone_24"
+        android:layout_height="40dp">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Email"
+        android:text="amanpandey1298@gmail.com"
+        android:paddingStart="12dp"
+        android:fontFamily="@font/open_sans"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        android:drawableTint="@color/grey"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:layout_height="40dp">
+
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Paswword"
+        android:text="android@123"
+        android:fontFamily="@font/open_sans"
+        android:paddingStart="12dp"
+        android:layout_marginBottom="2dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:drawableTint="@color/grey"
+        android:drawableStart="@drawable/ic_lock"
+        android:layout_height="40dp">
+
+    </EditText>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text="Edit my address ?"
+        android:layout_gravity="end"
+        android:focusable="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

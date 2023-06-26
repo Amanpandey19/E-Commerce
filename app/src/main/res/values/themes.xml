@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LoginAndSignup" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_theme</item>
+        <item name="colorPrimaryVariant">@color/blue_theme</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView" >
+        <!-- Text Size -->
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="hintTextColor">@color/grey</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">@color/grey</item>
+        <!-- Icon Color -->
+        <item name="android:tint">@color/DarkGray</item>
+    </style>
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/border_cart_button</item>
+    </style>
+
+    <style name="AppTheme.Button." parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/border_cart_button</item>
+        <item name="android:backgroundTint">@color/orange</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="colorControlNormal">@color/grey</item>
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/main_theme</item>
+    </style>
+
+    <style name="delete" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/border_cart_button</item>
+        <item name="android:backgroundTint">@color/no_show</item>
+    </style>
+
+    <style name="update" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/border_cart_button</item>
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+</resources>
