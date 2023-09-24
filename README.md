@@ -35,8 +35,8 @@
 ## Techniques
 RecycleView, ToolBar, CardView, ListView, NestedScroll, DrawerLayout, ActionBarDrawerToggle, NavigationView, ProgressBar, DialogFragment, Fragments and more.
 
-## Develeped By
-* Auther : Aman Pandey
+## Developed By
+* Author : Aman Pandey
 * Email  : amanpandey12398@gmail.com
 
 Here are some screenshots of app
